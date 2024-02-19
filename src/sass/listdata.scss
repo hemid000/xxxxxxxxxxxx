@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.listtotal {
+  box-sizing: border-box;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .mini {
+    width: 100%;
+    background: var(--Foundation-Black-black-300, #0b0b0b);
+    @media (max-width: 480px) {
+        
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+
+    .data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 630px;
+      padding: 0px 50px;
+      @media (max-width: 744px) {
+        padding: 0 25px;
+      }
+     
+
+      .head {
+        padding: 70px 0px 0px 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        @media (max-width: 1044px) {
+          padding: 30px 0px 0px 0px;
+        }
+        @media (max-width: 484px) {
+          padding: 20px 0px 0px 0px;
+        }
+        h1 {
+          color: var(--Foundation-White-white-500, #fafafa);
+          font-feature-settings: "ss01" on;
+
+          /* H2 Regular */
+          font-family: "Space Grotesk";
+          font-size: 100px;
+          font-style: normal;
+          font-weight: 400;
+          //   line-height: 120%; /* 120px */
+          letter-spacing: -5px;
+
+          @media (max-width: 1224px) {
+            font-size: 75px;
+          }
+
+          @media (max-width: 944px) {
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 112.7%; /* 50.715px */
+          }
+          @media (max-width: 744px) {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; /* 42px */
+            letter-spacing: -0.7px;
+          }
+          @media (max-width: 512px) {
+            width: 250px;
+          }
+        }
+
+        .icon1 {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          cursor: pointer;
+
+          svg {
+            fill: var(--Foundation-White-white-700, #b2b2b2);
+            stroke-width: 0.5px;
+            stroke: var(--Foundation-Grey-grey-700, #121212);
+            width: 26px;
+            height: 26px;
+            @media (max-width: 744px) {
+              width: 15px;
+              height: 15px;
+            }
+          }
+          span {
+            color: var(--Foundation-White-white-700, #e4e4e4);
+            font-feature-settings: "ss01" on;
+
+            /* Title 3 Light */
+            font-family: "Space Grotesk";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 120%; /* 36px */
+            letter-spacing: -0.6px;
+
+            @media (max-width: 744px) {
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 120%; /* 21.6px */
+              letter-spacing: -0.36px;
+            }
+          }
+        }
+      }
+      .main {
+        width: 83%;
+        padding: 35px 0px 40px 0px;
+        text-align: start;
+        @media (max-width: 748px) {
+          width: 100%;
+          padding: 15px 0 30px 0;
+        }
+        @media (max-width: 484px) {
+          width: 100%;
+          padding: 15px 0 20px 0;
+        }
+        p {
+          color: var(--Foundation-White-white-500, #fafafa);
+          font-feature-settings: "ss01" on;
+
+          /* Body Light */
+          font-family: "Space Grotesk";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 175%; /* 35px */
+          letter-spacing: -0.4px;
+          @media (max-width: 550px) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      button {
+        border-radius: 50px;
+        border: 1px solid var(--Foundation-White-white-700, #e4e4e4);
+        width: 190px;
+        padding: 15px 37px;
+
+        color: var(--Foundation-White-white-700, #e4e4e4);
+        font-feature-settings: "ss01" on;
+        font-family: "Space Grotesk";
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: -0.81px;
+        background-color: transparent;
+
+        transition: 0.3s ease-in-out;
+        display: flex;
+
+        @media (max-width: 744px) {
+          width: 123px;
+          padding: 14px 24px;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          letter-spacing: -0.54px;
+        }
+
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+}

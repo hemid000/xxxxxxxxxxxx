@@ -1,0 +1,131 @@
+@import "./style.scss";
+
+$small: 400px;
+$medium: 900px;
+
+.foot {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  padding-top: 70px;
+  button {
+    width: 200px;
+    height: 200px;
+    @media screen and (max-width: $small) {
+      scale: 0.8;
+    }
+    align-items: center;
+    justify-content: center;
+    border-radius: 500px;
+   border: none;
+    font-feature-settings: "ss01" on;
+    font-family: "Space Grotesk";
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.81px;
+    background-color: transparent;
+    svg {
+      color: var(--Foundation-White-white-700, #e4e4e4);
+    color: var(--Foundation-White-white-700, #e4e4e4);
+font-size: 16px;
+    }
+    transition: 0.3s ease-in-out;
+    display: flex;
+
+  
+  }
+
+  div {
+    table {
+      @include text-style-caption-2-light();
+      color: var(--Foundation-White-white-700, #e4e4e4);
+      display: flex;
+
+      @media screen and (max-width: $medium) {
+        gap: 20px;
+        flex-direction: column;
+      }
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 470px;
+
+      tr {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+      }
+    }
+  }
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.head {
+  @include text-style-h-2-regular();
+  padding: 40px 0 0 0 !important;
+}
+
+.email {
+  @media screen and (max-width: $small) {
+    width: 100%;
+  }
+  @media screen and (min-width: $medium) {
+    width: 58%;
+  }
+  padding-top: 20px;
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    input {
+      @media screen and (max-width: $medium) {
+        @include text-style-body-light();
+      }
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+    }
+
+ 
+  }
+}
+
+hr {
+  width: 100%;
+  color: var(--Foundation-White-white-700, #e4e4e4);
+  border: 0.5px solid var(--Foundation-White-white-700, #e4e4e4);
+  margin: 3px 0px;
+}
+.send {
+  border: none !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-feature-settings: "ss01" on;
+ font-family: "Space Grotesk"; 
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.81px;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  display: flex;
+gap: 10px;
+  &:hover {
+    background-color: transparent !important;
+    color: white !important;
+  }
+}
