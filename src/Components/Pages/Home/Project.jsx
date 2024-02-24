@@ -28,6 +28,17 @@ const Project = () => {
         <div className="cards">
           <>
             <Swiper
+              breakpoints={{
+                768: {
+                  slidesPerView: 3,
+                },
+                600: {
+                  slidesPerView: 2,
+                },
+                500: {
+                  slidesPerView: 1,
+                },
+              }}
               spaceBetween={30}
               loop={true}
               centeredSlides={true}
@@ -73,6 +84,38 @@ const Project = () => {
               </SwiperSlide>
             </Swiper>
           </>
+          <div className="res_card">
+            <div className="res_img">
+              <img src={secimg1} alt="" />
+              <div className="hover_box">
+                Vision 
+              </div>
+            </div>
+            <div className="res_img">
+              <img src={secimg1} alt="" />
+              <div className="hover_box">
+                Vision 
+              </div>
+            </div>
+            <div className="res_img">
+              <img src={secimg1} alt="" />
+              <div className="hover_box">
+                Vision 
+              </div>
+            </div>
+            <div className="res_img">
+              <img src={secimg1} alt="" />
+              <div className="hover_box">
+                Vision 
+              </div>
+            </div>
+            <div className="res_img">
+              <img src={secimg1} alt="" />
+              <div className="hover_box">
+                Vision 
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
